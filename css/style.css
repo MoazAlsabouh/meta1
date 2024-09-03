@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5f5;
+  font-family: 'Arial', sans-serif;
+  color: #333333;
+  line-height: 1.6;
+  text-align: center;
+}
+
+
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+}
+
+nav {
+  background-color: #333333;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-block;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+nav ul li a:hover {
+  color: #cccccc;
+}
+
+
+.banner {
+  background-image: url('../images/Essen.jpeg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.banner p {
+  font-size: 18px;
+}
+
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.section {
+  background-color: #f9e6db;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.section img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333333;
+}
+
+.section p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #333333;
+}
+
+.section a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #333333;
+  padding: 8px 16px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.section a:hover {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+
+footer {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left img {
+  width: 50px;
+  height: auto;
+}
+
+.footer-right p {
+  font-size: 12px;
+  color: #333333;
+}
